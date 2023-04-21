@@ -6,4 +6,7 @@ AS SELECT TEACHER [Код],
           GENDER [Пол],
           PULPIT [Код_кафедры] FROM TEACHER
 
+INSERT INTO Преподаватель
+VALUES ('1', 'oein', 'm', 'ISiT')
+
 SELECT * FROM Преподаватель;
