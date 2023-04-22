@@ -1,0 +1,11 @@
+USE UNIVER;
+
+IF (SELECT COUNT(*) FROM STUDENT) > 50
+BEGIN
+    PRINT N'Студентов больше 50'
+end
+ELSE
+BEGIN
+    PRINT N'Студентов меньше 50';
+    SELECT NAME, BDAY FROM STUDENT WHERE YEAR(BDAY) LIKE 1993;
+end
