@@ -1,19 +1,14 @@
-DECLARE @charVariable char = 'A',
-    @varcharVariable varchar(50) = 'Word',
-    @datetimeVariable datetime,
-    @timeVariable time,
-    @integerVariable int,
-    @smallIntegerVariable smallint,
-    @tinyIntVariable tinyint,
-    @numericVariable numeric(12, 5);
+USE UNIVER;
 
-SET @datetimeVariable = GETDATE();
-SET @timeVariable = '12:20:03:100';
-SET @integerVariable = 12415;
-SELECT @smallIntegerVariable = 123, @tinyIntVariable = 12, @numericVariable = 1241314.12451;
-
-SELECT @charVariable [Char], @varcharVariable [Varchar], @datetimeVariable [Datetime], @timeVariable [Time];
-PRINT 'Integer = ' + CAST(@integerVariable AS VARCHAR(10));
-PRINT 'Small int = ' + CAST(@smallIntegerVariable AS VARCHAR (5));
-PRINT 'Tiny int = ' + CAST(@tinyIntVariable AS VARCHAR(3));
-PRINT 'Numeric = ' + CAST(@numericVariable AS VARCHAR(15));
+BEGIN TRY
+    INSERT INTO AUDITORIUM (AUDITORIUM, AUDITORIUM_TYPE, AUDITORIUM_CAPACITY, AUDITORIUM_NAME)
+    VALUES ('203-1', 'LK-K', '1214', '203-1');
+end try
+begin catch
+    PRINT ERROR_NUMBER();
+    PRINT ERROR_MESSAGE();
+    PRINT ERROR_LINE();
+    PRINT ERROR_PROCEDURE();
+    PRINT ERROR_SEVERITY();
+    PRINT ERROR_STATE();
+end catch
