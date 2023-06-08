@@ -2,10 +2,13 @@
 <module type="DBE_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$" />
+    <content url="file://$MODULE_DIR$/../Exam" />
     <content url="file://$MODULE_DIR$/../Lab10" />
     <content url="file://$MODULE_DIR$/../Lab11" />
     <content url="file://$MODULE_DIR$/../Lab12" />
     <content url="file://$MODULE_DIR$/../Lab13" />
+    <content url="file://$MODULE_DIR$/../Lab14" />
+    <content url="file://$MODULE_DIR$/../Lab15" />
     <content url="file://$MODULE_DIR$/../Lab6" />
     <content url="file://$MODULE_DIR$/../Lab7" />
     <content url="file://$MODULE_DIR$/../Lab8" />
